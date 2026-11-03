@@ -1,0 +1,35 @@
+{
+  "name": "KrustyKrabTycoon",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": { "Game": { "$path": "src/server" } },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "LoadCharacterAppearance": false,
+        "CharacterWalkSpeed": 20,
+        "CameraMaxZoomDistance": 60,
+        "CameraMinZoomDistance": 8
+      },
+      "StarterPlayerScripts": { "Interface": { "$path": "src/client" } }
+    },
+    "Workspace": {
+      "$properties": { "Gravity": 140, "StreamingEnabled": false }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [0.48, 0.72, 0.75],
+        "OutdoorAmbient": [0.45, 0.7, 0.75],
+        "Brightness": 2,
+        "ClockTime": 13,
+        "FogColor": [0.21, 0.68, 0.78],
+        "FogStart": 180,
+        "FogEnd": 650
+      }
+    },
+    "SoundService": { "$properties": { "RespectFilteringEnabled": true } }
+  }
+}
